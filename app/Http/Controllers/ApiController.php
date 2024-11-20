@@ -2,17 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Models\Item;
+use App\Http\Resources\ItemResource;
+use Illuminate\Http\Request;
 
 class ApiController extends Controller
 {
     // List all items
     public function listAll()
     {
-        return response()->json(Item::all());
+        //dd(ItemResource::collection(Item::all()));
+        return ItemResource::collection(Item::all());
     }
-
     // List individual item
     public function listIndividual($id)
     {

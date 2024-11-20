@@ -6,6 +6,7 @@
 <body>
     <h1>Contact Us</h1>
     <form method="POST" action="/api/contact">
+        @csrf
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
         <textarea name="message" placeholder="Your Message" required></textarea>

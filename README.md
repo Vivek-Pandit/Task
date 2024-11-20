@@ -19,11 +19,11 @@
     </a>
 </p>
 
-# Task Management API
+# Task - 1
 
 ## Overview
 
-This is a Task Management API built using the Laravel framework. It allows you to manage tasks, items, and other entities with a simple RESTful API. You can use this project as a base for your task management system, or simply as a learning resource for working with Laravel.
+This is a Task - 1 built using the Laravel framework. It allows you to manage tasks, items, and other entities with a simple RESTful API. You can use this project as a base for your task management system, or simply as a learning resource for working with Laravel.
 
 ## Features
 
@@ -206,4 +206,9 @@ This project is open-source and licensed under the MIT License.
 
 <p align="center">
     <strong>Created By  <a href="https://dev-vivek.vercel.app/"> Vivek Pandit </strong>
+<<<<<<< HEAD
 </p>
+=======
+</p>
+
+>>>>>>> 6569ca88102c888740ef528bccc7472783b3c19e
