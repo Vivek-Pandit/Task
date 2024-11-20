@@ -205,6 +205,6 @@ This project is open-source and licensed under the MIT License.
 ---
 
 <p align="center">
-    <strong>Made with ❤️ using Laravel</strong>
+    <strong>Created By Vivek Pandit </strong>
 </p>
 ```
