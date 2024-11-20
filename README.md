@@ -19,11 +19,11 @@
     </a>
 </p>
 
-# Task Management API
+# Task - 1
 
 ## Overview
 
-This is a Task Management API built using the Laravel framework. It allows you to manage tasks, items, and other entities with a simple RESTful API. You can use this project as a base for your task management system, or simply as a learning resource for working with Laravel.
+This is a Task - 1 built using the Laravel framework. It allows you to manage tasks, items, and other entities with a simple RESTful API. You can use this project as a base for your task management system, or simply as a learning resource for working with Laravel.
 
 ## Features
 
