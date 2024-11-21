@@ -5,11 +5,12 @@ use App\Http\Controllers\ApiController;
 use App\Http\Controllers\ItemController;
 use App\Http\Controllers\ItemsController;
 
-Route::resource('photos', ItemController::class);
+//Route::resource('photos', ItemController::class);
 
 
- 
-Route::apiResource('test', ItemsController::class);
+//Route::apiResource('test', ItemsController::class);
+
+Route::singleton('profile', ItemsController::class);
 
 // List all items
 Route::get('/items', [ApiController::class, 'listAll']);
@@ -28,4 +29,4 @@ Route::get('/greeting', function () {
 
 Route::get('/user/{name?}', function ($name = 'Guest') {
     return 'Welcome ' . $name;
-});
+})->name('api.user.greeting');
