@@ -12,17 +12,16 @@ class ApiController extends Controller
     public function listAll()
     {
         //dd(ItemResource::collection(Item::all()));
-        return ItemResource::collection(Item::all());
+        //return ItemResource::collection(Item::all());
+        return ItemResource::collection(Item::paginate(10));
     }
     // List individual item
-    public function listIndividual($id)
+    public function listIndividual(Item $id)
     {
-        $item = Item::find($id);
-        if (!$item) {
-            return response()->json(['error' => 'Item not found'], 404);
-        }
-        return response()->json($item);
+       
+        return response()->json($id);
     }
+    
 
     // Handle contact form submission
     public function contact(Request $request)
@@ -36,4 +35,6 @@ class ApiController extends Controller
         // Here, you would typically store the contact message or send an email.
         return response()->json(['success' => 'Thank you for contacting us!']);
     }
+
+
 }
