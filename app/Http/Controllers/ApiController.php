@@ -42,7 +42,10 @@ class ApiController extends Controller
         Contact::create($validated);
 
         // Here, you would typically store the contact message or send an email.
-        return response()->json(['success' => 'Thank you for contacting us!']);
+        return response()->json(['success' => 'Thank you for contacting us!',
+        'data' => $validated
+        ]);
+
     }
 
 
