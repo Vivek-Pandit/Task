@@ -24,6 +24,9 @@ Route::post('/contact', [ApiController::class, 'contact']);
 // API for paginated data
 Route::get('/items', [ApiController::class, 'fetchItems']);
 
+// Handle contact form submission
+Route::get('/contact', [ApiController::class, 'contact']);
+
 
 // Route::get('/greeting', function () {
 //     return 'Hello World';

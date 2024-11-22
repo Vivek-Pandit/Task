@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Item;
 use App\Http\Resources\ItemResource;
 use Illuminate\Http\Request;
-
+use App\Models\Contact;
 class ApiController extends Controller
 {
     // List all items
@@ -38,6 +38,8 @@ class ApiController extends Controller
             'email' => 'required|email',
             'message' => 'required|string',
         ]);
+
+        Contact::create($validated);
 
         // Here, you would typically store the contact message or send an email.
         return response()->json(['success' => 'Thank you for contacting us!']);
