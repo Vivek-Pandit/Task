@@ -33,17 +33,17 @@ class ApiController extends Controller
     // Handle contact form submission
     public function contact(Request $request)
     {
-        $validated = $request->validate([
+        $contact = $request->validate([
             'name' => 'required|string',
             'email' => 'required|email',
             'message' => 'required|string',
         ]);
 
-        Contact::create($validated);
+        Contact::create($contact);
 
         // Here, you would typically store the contact message or send an email.
         return response()->json(['success' => 'Thank you for contacting us!',
-        'data' => $validated
+        'data' => $contact
         ]);
 
     }
