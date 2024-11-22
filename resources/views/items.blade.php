@@ -11,6 +11,7 @@
         <tr>
             <th>Name</th>
             <th>Description</th>
+            <th>Price</th>
         </tr>
     </thead>
     <tbody>
@@ -18,10 +19,15 @@
             <tr>
                 <td>{{ $item->name }}</td>
                 <td>{{ $item->description }}</td>
+                <td>{{ $item->price }}</td>
             </tr>
         @endforeach
     </tbody>
 </table>
+
+<div>
+    {{ $items->links() }}
+</div>
 
 
     <script>

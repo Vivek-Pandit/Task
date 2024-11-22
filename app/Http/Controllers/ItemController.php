@@ -12,7 +12,8 @@ class ItemController extends Controller
      */
     public function index()
     {
-        //
+        $items = Item::paginate(2); // or Item::all() if you don't want pagination
+        return view('items', compact('items'));
     }
 
     /**

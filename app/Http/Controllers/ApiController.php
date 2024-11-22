@@ -13,8 +13,15 @@ class ApiController extends Controller
     {
         //dd(ItemResource::collection(Item::all()));
         //return ItemResource::collection(Item::all());
-        return ItemResource::collection(Item::paginate(10));
+        // return ItemResource::collection(Item::paginate(2));
+        return Item::paginate(2);
     }
+
+    public function fetchItems()
+    {
+        return Item::paginate(2); // API endpoint to return paginated items
+    }
+    
     // List individual item
     public function listIndividual(Item $id)
     {
